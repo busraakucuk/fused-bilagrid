@@ -21,7 +21,7 @@ fallback_archs = [
 ]
 
 nvcc_args = [
-    "/O2",
+    "-O3",
     #"--maxrregcount=32",
     "--use_fast_math",
 ]
