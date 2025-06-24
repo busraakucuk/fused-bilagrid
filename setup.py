@@ -21,7 +21,7 @@ fallback_archs = [
 ]
 
 nvcc_args = [
-    "-O3",
+    "/O2",
     #"--maxrregcount=32",
     "--use_fast_math",
 ]
@@ -78,7 +78,7 @@ setup(
                 "fused_bilagrid/ext.cpp"
             ],
             extra_compile_args={
-                "cxx": ["-O3"],
+                "cxx": ["/O2"],
                 "nvcc": nvcc_args
             }
         )
