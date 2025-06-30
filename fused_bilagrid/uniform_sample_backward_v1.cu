@@ -279,7 +279,7 @@ void bilagrid_uniform_sample_backward_v1(
 ) {
     // v_bilagrid
     {
-        dim3 block = { block_x, block_y, 1 };
+        dim3 block = { (unsigned int)block_x, (unsigned int)block_y, 1 };
     
         int mult_x = (2*w+W)/(block.x*W*target_tile_size);
         int mult_y = (2*h+H)/(block.y*H*target_tile_size);
